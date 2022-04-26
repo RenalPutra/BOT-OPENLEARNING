@@ -14,12 +14,13 @@ Requirements sebelum menggunakan program :
 5. Processor yang dibutuhkan disarankan pada core I3 gen-(apapun). Di bawah ini bisa saja hanya saja mungkin akan berjalan sedikit lambat
 
 Program utama adalah openlearning.py, silahkan jalankan code tersebut.
-cmd : python openleaning.py
-vs code : jalankan seperti biasa
-
+- cmd : python openleaning.py
+- vs code : jalankan seperti biasa
+<br>
 setelah dijalankan, silahkan lakukan penginputan data pada terminal seperti yang diminta, setelah itu program baru dapat berjalan.
-
+<br>
+<br>
 HAPPY CHEATER 😊
 (khusus modul sistem operasi semester 4)
-
+<br>
 Regrads your campus friend 👽
