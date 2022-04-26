@@ -1,0 +1,25 @@
+Petunjuk angka pada modul!
+Di bawah ini program akan menanyakan sebuah angka yang memiliki maksud tertentu.
+maksud angka pada modul adalah modul yang ingin di tuju
+1. angka 1 :  (Perkembangan Software dan Definisi Sistem Komputer) 36 slide
+2. angka 2 :  (Konsep Dasar Sistem Komputer & Sistem Operasi) 33 slide
+3. angka 3 :  (Struktur Sistem Operasi) 46 slide
+4. angka 4 :  (Sistem Manajemen File) 36 slide
+5. angka 5 :  (Manajemen Proses) 53 slide
+6. angka 6 :  (Deadlock & Konkurensi) 51 slide
+7. angka 7 :  (Manajemen Memori) ? (belum terbuka)
+8. angka 8 :  (Sistem Paging) 94 slide
+9. angka 9 :  (Manajemen Perangkat Masukan dan Keluaran (I/O)) 73 slide
+10. angka 10 :  (Penjadwalan Proses) ? (belum terbuka)
+11. angka 11 :  (Proses Sinkronisasi) 41 slide
+12. angka 12 :  (Impelementasi & Sistem Berkas Internal) ? (belum terbuka)
+13. angka 13 :  (Keamanan Sistem) ? (belum terbuka)
+14. angka 14 :  (Sistem Operasi Linux) ? (belum terbuka)
+
+Sebelum itu silahkan masukkan username dan password OPL anda terlbih dahulu! :)
+Semoga Bermanfaat!
+                                                                    
+                                                                    
+                                                                     Regards
+                                                                Your Univ Friends
+                                                                        :)
