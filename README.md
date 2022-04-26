@@ -10,6 +10,7 @@ Requirements sebelum menggunakan program :
    - pip install mechanicalsoup
    - pip install selenium
    - pip install beautifulsoup4
+   - pip install wget
 4. Kecepatan internet minimal memiliki kecepatan sebesar 5 MB/s
 5. Processor yang dibutuhkan disarankan pada core I3 gen-(apapun). Di bawah ini bisa saja hanya saja mungkin akan berjalan sedikit lambat
 
