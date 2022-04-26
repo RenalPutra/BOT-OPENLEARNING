@@ -28,7 +28,7 @@ def masuk_modul():
     global driver
     button2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[2]/top-bar-button/button'))).click()
     print(button2)
-    button3 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[2]/top-bar-dropdown/div[1]/section/div[2]/div/div/ul/li[30]/a'))).click()
+    button3 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[title='Sistem Operasi']"))).click()
     print(button3)
     button4 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="portal-container"]/portal-page/ol-top-bar/div/nav/div[2]/ul/li[2]/a'))).click()
     print(button4)
@@ -48,7 +48,7 @@ def login2():
 #masuk ke dalam materi sistem oeprasi dan membuka keseluruhan pintu modul
 def masuk_materi():
     global driver
-    button6 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="course-links"]/div/div/div/div/ul/li[5]/a'))).click()
+    button6 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, "Learning Modules"))).click()
     print(button6)
     time.sleep(5)
     # x_path = '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-title-bar/div'.format(angka)
