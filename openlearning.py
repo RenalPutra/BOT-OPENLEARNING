@@ -9,6 +9,8 @@ import time
 import os
 import wget
 from config.config import *
+from pathlib import Path
+from playsound import playsound
 
 #Running chrome fake
 os.system('cls')
@@ -47,6 +49,9 @@ masuk_materi()
 time.sleep(8)
         
 proses_modul()
+audio = Path().cwd() / "music/undertale.mp3"
+for i in range(5):
+    playsound(audio)
 
 
 

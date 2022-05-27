@@ -10,6 +10,7 @@ import time
 import os
 import wget
 
+
 #Memanggil chrome fake
 driver = webdriver.Chrome('Chrome_fake/chromedriver.exe')
 #Melakukan penginoutan data dan materi tujuan
@@ -20,5 +21,6 @@ jenis_modul = input("Modul berapa yang ingin di baca? (1 - 14) : ")
 jumlah_slide = int(input("Masukkan Jumlah slide modul keseluruhan: "))
 def isi_data():
     global user, passwd, jenis_modul, jumlah_slide
+
     
     
