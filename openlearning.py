@@ -1,4 +1,3 @@
-from unittest import expectedFailure
 from mechanicalsoup import Browser
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -45,7 +44,7 @@ login2()
 time.sleep(5)
 
 masuk_materi()
-time.sleep(5)
+time.sleep(8)
         
 proses_modul()
 

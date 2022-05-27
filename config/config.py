@@ -1,4 +1,4 @@
-from unittest import expectedFailure
+from ast import Try
 from mechanicalsoup import Browser
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -67,9 +67,18 @@ def masuk_materi():
 #mulai mengerjakan modul
 def proses_modul():
     global driver
-    x_path2= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]/module-display-page-link'.format(jenis_modul)
-    button8 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, x_path2))).click()
-    print(button8)
+    xpath20= '//*[@id="pushActionRefuse"]'.format(jenis_modul)
+    button11 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, xpath20))).click()
+    print(button11)
+    
+    try:
+        x_path2= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]/module-display-page-link/a'.format(jenis_modul)
+        button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path2))).click()
+        print(button8)
+    except:
+        x_path99= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]/module-display-page-link/a'.format(jenis_modul)
+        button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path99))).click()
+        print(button8)
     time.sleep(2)
     # slideku = jumlah_slide
     for i in range (jumlah_slide):
@@ -81,6 +90,7 @@ def proses_modul():
             print(button9)
             time.sleep(5)
         except:
-            button10 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[class='css-1c9knll-Button-NextButtonComponent efmladu3']"))).click()
+            button10 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[class='css-1c9knll-Button-NextButtonComponent efmladu3']"))).click()
             print(button10)
             time.sleep(5)
+            
