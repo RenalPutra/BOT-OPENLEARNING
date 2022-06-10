@@ -4,7 +4,7 @@ Berhubung materi pada sistem operasi banyak dan kemungkinan tidak terbaca semua,
 Dengan program ini user bisa membaca modul dengan singkat tanpa membaca satu persatu. 
 
 Requirements sebelum menggunakan program :
-1. Sudah menginstall python
+1. Sudah menginstall python (versi terupdate)
 2. Melakukan install modul selenium, mechanicalsoup dan beautifulsoup (pastikan sudah menginstall pip)
    Code penginstallan (silahkan jalankan code berikut pada cmd):
    - pip install mechanicalsoup
