@@ -1,20 +1,24 @@
 Petunjuk angka pada modul!
 Di bawah ini program akan menanyakan sebuah angka yang memiliki maksud tertentu.
 maksud angka pada modul adalah modul yang ingin di tuju
-1. angka 1 :  (Perkembangan Software dan Definisi Sistem Komputer) 36 slide
-2. angka 2 :  (Konsep Dasar Sistem Komputer & Sistem Operasi) 33 slide
-3. angka 3 :  (Struktur Sistem Operasi) 46 slide
-4. angka 4 :  (Sistem Manajemen File) 36 slide
-5. angka 5 :  (Manajemen Proses) 53 slide
-6. angka 6 :  (Deadlock & Konkurensi) 51 slide
-7. angka 7 :  (Manajemen Memori) ? (belum terbuka)
-8. angka 8 :  (Sistem Paging) 94 slide
-9. angka 9 :  (Manajemen Perangkat Masukan dan Keluaran (I/O)) 73 slide
-10. angka 10 :  (Penjadwalan Proses) ? (belum terbuka)
-11. angka 11 :  (Proses Sinkronisasi) 41 slide
-12. angka 12 :  (Impelementasi & Sistem Berkas Internal) ? (belum terbuka)
-13. angka 13 :  (Keamanan Sistem) ? (belum terbuka)
-14. angka 14 :  (Sistem Operasi Linux) ? (belum terbuka)
+1. angka 1 :  (Pengantar Data Science) 56 slide
+2. angka 2 :  (Data Preprocessing) 84 slide
+3. angka 3 :  (Proses Data Mining Algoritma Klasifikasi) 45 slide
+4. angka 4 :  (Clustering dan Estimasi) 48 slide
+5. angka 5 :  (Algoritma Asosiasi dan Forcasting (Prediksi)) 78 slide
+6. angka 6 :  (Scrawling Data) 34 slide
+7. angka 7 :  (Text Mining) 65 
+8. angka 8 :  (Pengenalan dan Fundamental R untuk Data Science) 43 slide
+9. angka 9 :  (Statistik dengan R untuk Data Science) 65 slide
+10. angka 10 :  (Mengatasi Data "Kotor" & Data Profiling) 63 slide
+11. angka 11 :  (SQL dan Sistem Database Relasional & Data Cleansing) 42 slide
+12. angka 12 :  (Data Cleansing pada Character Lain) 58 slide
+13. angka 13 :  (Standarisasi Kolom Data) 49 slide
+14. angka 14 :  (Mencari, Menangani Data Duplikat dan Data Enrichment serta Kesimpulan Data Wran..) 62 slide
+15. angka 15 :  (Fundamental Visualisasi Data menggunakan R) 56 slide
+16. angka 16 :  (Visualisasi Data dalam Data Science menggunakan R (Part 1)) ? 
+17. angka 17 :  (Visualisasi Data dalam Data Science menggunakan R (Part 2)) ? 
+18. angka 18 :  (Visualisasi Data Lanjut Dengan ggplot2 Menggunakan R) ? 
 
 Sebelum itu silahkan masukkan username dan password OPL anda terlbih dahulu! :)
 Semoga Bermanfaat!

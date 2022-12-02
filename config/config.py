@@ -26,9 +26,9 @@ def login():
 #masuk pada modulsistem operasi
 def masuk_modul():
     global driver
-    button2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[2]/top-bar-button/button'))).click()
+    button2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[3]/top-bar-button/button'))).click()
     print(button2)
-    button3 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[title='Sistem Operasi']"))).click()
+    button3 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[3]/top-bar-dropdown/div[1]/section/div[2]/div/div[2]/ul/li[6]/a'))).click()
     print(button3)
     button4 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="portal-container"]/portal-page/ol-top-bar/div/nav/div[2]/ul/li[2]/a'))).click()
     print(button4)
@@ -42,21 +42,35 @@ def login2():
     username.send_keys(user)
     password.clear()
     password.send_keys(passwd)
-    button5 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div[2]/div/div/div/div[3]/div[2]/form/button"))).click()
-    print(button5)
+    tombol = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))).click()
+    print(tombol)
 
 #masuk ke dalam materi sistem oeprasi dan membuka keseluruhan pintu modul
 def masuk_materi():
     global driver
-    button6 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, "Learning Modules"))).click()
-    print(button6)
+    button5 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="course-links"]/div/div/div/div/ul/li[5]/a'))).click()
+    print(button5)
     time.sleep(5)
     # x_path = '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-title-bar/div'.format(angka)
     # button7 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, x_path))).click()
-    for i in range (1, 14):
-        x_path = '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-title-bar/div'.format(i)
-        button7 = WebDriverWait(driver, 2).until(EC.element_to_be_clickable((By.XPATH, x_path))).click()
-        print(button7)
+    def bukamodul():
+        driver.execute_script("window.scrollTo(0, 0)","")
+        for i in range(1,18):
+            x_path = '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-title-bar/div'.format(i)
+            button6 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path))).click()
+            print(button6)
+            time.sleep(0.01)
+    cek = True        
+    while cek:
+        print("\n")
+        tanya = input("apakah modul yang mau kamu buka udah muncul? [y/n] : ")
+        print("\n")
+        if tanya == "y":
+            break
+        elif tanya == "n":
+            bukamodul()
+        else:
+            print("Bukan itu yang saya tanyakan bang! Lu paham ga sih? 😡")
    
     # a = soup.find('div', {'class' : 'mv-module-title in-use'})
     # if a == button7:
@@ -67,16 +81,14 @@ def masuk_materi():
 #mulai mengerjakan modul
 def proses_modul():
     global driver
-    xpath20= '//*[@id="pushActionRefuse"]'.format(jenis_modul)
-    button11 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, xpath20))).click()
-    print(button11)
+
     
     try:
-        x_path2= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]/module-display-page-link/a'.format(jenis_modul)
+        x_path2= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]'.format(jenis_modul)
         button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path2))).click()
         print(button8)
     except:
-        x_path99= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]/module-display-page-link/a'.format(jenis_modul)
+        x_path99= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]'.format(jenis_modul)
         button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path99))).click()
         print(button8)
     time.sleep(2)
@@ -90,7 +102,7 @@ def proses_modul():
             print(button9)
             time.sleep(5)
         except:
-            button10 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "a[class='css-1c9knll-Button-NextButtonComponent efmladu3']"))).click()
+            button10 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#page-traversal-mount > div > div:nth-child(2) > a']']"))).click()
             print(button10)
             time.sleep(5)
             
