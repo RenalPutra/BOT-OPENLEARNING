@@ -4,13 +4,16 @@ Berhubung materi pada sistem operasi banyak dan kemungkinan tidak terbaca semua,
 Dengan program ini user bisa membaca modul dengan singkat tanpa membaca satu persatu. 
 
 Requirements sebelum menggunakan program :
-1. Sudah menginstall python
+1. Sudah menginstall python (versi terupdate)
 2. Melakukan install modul selenium, mechanicalsoup dan beautifulsoup (pastikan sudah menginstall pip)
    Code penginstallan (silahkan jalankan code berikut pada cmd):
    - pip install mechanicalsoup
    - pip install selenium
    - pip install beautifulsoup4
    - pip install wget
+   - pip install playsound
+   - pip install pathlib
+   
 4. Kecepatan internet minimal memiliki kecepatan sebesar 5 MB/s
 5. Processor yang dibutuhkan disarankan pada core I3 gen-(apapun). Di bawah ini bisa saja hanya saja mungkin akan berjalan sedikit lambat
 
