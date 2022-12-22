@@ -16,7 +16,7 @@ import wget
 driver = webdriver.Chrome(ChromeDriverManager().install())
 #Melakukan penginoutan data dan materi tujuan
 readme = open("require.txt", "r")
-user = input("Masukkan username OPL anda : ")
+user = input("Masukkan email or profile OPL anda : ")
 passwd = input("Masukkan password OPL anda : ")
 jenis_modul = input("Modul berapa yang ingin di baca? (1 - 18) : ")
 jumlah_slide = int(input("Masukkan Jumlah slide modul keseluruhan: "))
