@@ -14,7 +14,7 @@ from pathlib import Path
 from playsound import playsound
 
 #Running chrome fake
-os.system('cls')
+os.system('cls') 
 try: 
     print(readme.read())
 except:

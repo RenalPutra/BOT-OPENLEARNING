@@ -26,8 +26,13 @@ def login():
 #masuk pada modulsistem operasi
 def masuk_modul():
     global driver
-    button2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[3]/top-bar-button/button'))).click()
-    print(button2)
+    time.sleep(5)
+    try:
+        button2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[3]/top-bar-button/button'))).click()
+        print(button2)
+    except:
+        button2 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[3]/ul/li[3]/top-bar-button/button/span[1]'))).click()
+        print(button2)
     button3 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ol-top-bar"]/ol-top-bar/div/nav/div[2]/ul/li[3]/top-bar-dropdown/div[1]/section/div[2]/div/div[2]/ul/li[6]/a'))).click()
     print(button3)
     button4 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="portal-container"]/portal-page/ol-top-bar/div/nav/div[2]/ul/li[2]/a'))).click()
@@ -84,12 +89,12 @@ def proses_modul():
 
     
     try:
-        x_path2= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]'.format(jenis_modul)
+        x_path2 = '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]'.format(jenis_modul)
         button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path2))).click()
         print(button8)
     except:
-        x_path99= '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]'.format(jenis_modul)
-        button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path99))).click()
+        x_path2 = '//*[@id="module-display-layer"]/div/module-display/module-set/div/div/div[{0}]/module-container/module-content/div/div[2]/ul/li[1]'.format(jenis_modul)
+        button8 = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, x_path2))).click()
         print(button8)
     time.sleep(2)
     # slideku = jumlah_slide
